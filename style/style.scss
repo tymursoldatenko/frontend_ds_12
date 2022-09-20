@@ -123,6 +123,58 @@ body {
             }
         }
 
-        
+        .special {
+
+            .conteiner {
+                width: 81.26%;
+                margin: 65px auto;
+                display: flex;
+                flex-direction: column;
+                
+                .special__item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    
+                    .special__block {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 20%;
+                        
+                        .special__baner {
+                            background-color: #5094F2;
+                            border-radius: 100%;
+                            width: 90%;
+                            height: 200px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 8%;
+                        }
+
+                        .baner__first {
+                            background-color: #D94748;
+                        }
+
+                        .baner__second {
+                            background-color: #EBBB11;
+                        }
+
+                        .special__title {
+                            font-size: 1rem;
+                            color: #5094F2;
+                        }
+                        
+                        .special__text {
+                            font-size: .75rem;
+                            color: #6C6C6C;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
