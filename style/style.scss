@@ -9,4 +9,56 @@
 
 body {
     font-family: "Myriad Pro";
+    
+    .header {
+        .conteiner {
+            width: 81.26%;
+            margin: 21px auto;
+            display: flex;
+            justify-content: space-between;
+
+            .header__item {
+                display: flex;
+                flex-direction: row;
+
+                .header__logo {
+                    background-color: #5094F2;
+                    border-radius: 100%;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-self: center;
+
+                    .logo {
+                        width: 21px;
+                        margin: 7px 6px 10px;
+                    }
+                }
+
+                .header__title {
+                    font-size: 2rem;
+                    display: flex;
+                    align-self: center;
+                }
+
+            }
+
+            .header__item--nav {
+                .header__nav {
+                    font-size: 0;
+                    .nav__item,
+                    .nav__item--active {
+                        font-size: 1rem;
+                        display: inline-block;
+                        color: #6C6C6C;
+                        margin: 15px;
+                    }
+
+                    .nav__item--active {
+                        border-bottom: 2px solid #5094F2;
+                    }
+                }
+            }
+        }
+    }
 }
