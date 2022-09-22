@@ -1,0 +1,170 @@
+@import 'mixin';
+@import 'header';
+@import 'footer';
+
+$fontFamily: "Myriad Pro";
+$colorFirst: #5094F2;
+$colorSecond: #6C6C6C; 
+$colorTheard: #909090;
+$colorFourth: #6F7173;
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../MyriadPro-Regular.woff2),
+    local(MyriadPro);
+}
+
+
+body {
+    font-family: $fontFamily;
+
+    .main {
+        @include flex(column, flex-start);
+
+        .additional {
+            background-image: url(../img/background.png);
+            background-size: cover;
+
+            .conteiner {
+                @include addmarginconteiner(81.26%, 2.9%);
+                @include flex(row, flex-start);
+
+                .additional__baner {
+                    .additional__picture {
+                        width: 70%;
+                    }
+                }
+
+                .additional__item {
+                    color: white;
+                    @include getmargin(8%, 0, 0, 25%);
+
+                    .additional__title {
+                        @include addstyletext(1.5rem, 0.02rem, 32px);
+                    }
+
+                    .additional__text {
+                        @include addstyletext(1rem, 0.02rem, 26px);
+                        @include getmargin(0, 0, 12%, 0);
+                    }
+
+                    .additional__buttom {
+                        background-color: $colorFirst;
+                        @include flex(row, flex-start);
+                        padding: 3% 4%;
+                        width: 70%;
+
+                        .buttom__picture {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .buttom__link {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 1.25rem;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .buttom__link:hover {
+                            font-size: 1.3rem; 
+                            text-shadow: 2px 2px 4px #000000;
+                            transition: all .2s linear;
+                        }
+                    }
+                }
+            }
+        }
+
+        .special {
+
+            .conteiner {
+                @include addmarginconteiner(81.26%, 3.5%);
+                @include flex(column, flex-start);
+
+                .special__item {
+                    width: 100%;
+                    @include flex(row, space-between);
+
+                    .special__block {
+                        @include flex(column, flex-start);
+                        align-items: center;
+                        width: 20%;
+
+                        .special__baner {
+                            background-color: $colorFirst;
+                            border-radius: 100%;
+                            width: 90%;
+                            height: 200px;
+                            @include flex(row, center);
+                            align-items: center;
+                            @include getmargin(0, 0, 8%, 0);
+                        }
+
+                        .baner__first {
+                            background-color: #D94748;
+                        }
+
+                        .baner__second {
+                            background-color: #EBBB11;
+                        }
+
+                        .special__title {
+                            font-size: 1rem;
+                            color: $colorFirst;
+                        }
+
+                        .special__text {
+                            font-size: .75rem;
+                            color: $colorTheard;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pramery {
+
+            .container__pramery {
+                width: 90%;
+                @include getmargin(2.5%, 3%, 2.5%, 7.5%);
+                @include flex(row, flex-start);
+
+                .pramery__baner{
+                    width: 100%;
+
+                    .baner__title--pramery {
+                        @include addstyletext(1.9rem, 0.02rem, 32px);
+                        color: $colorFourth;
+                        @include getmargin(0, 0, 10%, 5%);
+                    }
+
+                    .baner__picture--pramery {
+                        width: 120%;
+                    }
+                }
+
+                .pramery__copy {
+                    padding: 4% 0 0 15%;
+
+                    .pramery__title {
+                        @include addstyletext(1.4rem, 0.01rem, 19px);
+                        color: $colorFourth;
+                        @include getmargin(0, 0, 3%, 0);
+                    }
+
+                    .pramery__text {
+                        @include addstyletext(1.05rem, 0.1rem, 32px);
+                        color: $colorTheard;
+                        width: 70%;
+                    }
+                }
+
+            }
+        }
+    }
+}

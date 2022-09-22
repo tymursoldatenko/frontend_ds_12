@@ -1,14 +1,12 @@
 
 @mixin getmargin ($top, $right, $bottom, $left) {
-    margin: $top, $right, $bottom, $left;
+    margin: $top $right $bottom $left;
 }
 
-@mixin flex ($fd, $jc, $ai, $as) {
+@mixin flex ($fd, $jc) {
     display: flex;
     flex-direction: $fd;
     justify-content: $jc;
-    align-items: $ai;
-    align-self: $as;
 }
 
 @mixin addmarginconteiner ($wd, $mg) {

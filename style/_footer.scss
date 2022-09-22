@@ -1,15 +1,13 @@
-body {
-    font-family: $fontFamily;
+@import 'mixin';
 
-    .footer {
-        border-top: 1px solid #E5E5E5;
-        
-        .footer__title {
-            @include addmarginconteiner(20%, 2%);
-            // width: 20%;
-            // margin: 2% auto;
-            color: $colorTheard;
-            font-size: .8125rem;
-        }
+$colorTheard: #909090;
+
+.footer {
+    border-top: 1px solid #E5E5E5;
+
+    .footer__title {
+        @include addmarginconteiner(20%, 2%);
+        color: $colorTheard;
+        font-size: .8125rem;
     }
 }

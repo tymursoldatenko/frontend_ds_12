@@ -1,62 +1,67 @@
-body {
-    font-family: "$fontFamily";
+@import 'mixin';
 
-    .header {
-        .conteiner {
-            @include addmarginconteiner(81.26%, 1.3%);
-            // width: 81.26%;
-            // margin: 1.3% auto;
-            @include flex(row, space-between, start, auto);
-            // display: flex;
-            // justify-content: space-between;
+$colorFirst: #5094F2;
+$colorSecond: #6C6C6C; 
+$colorTheard: #909090;
+$colorFourth: #6F7173;
 
-            .header__item {
-                @include flex(row, stretch, start, auto);
-                // display: flex;
-                // flex-direction: row;
+.header {
+    .conteiner {
+        @include addmarginconteiner(81.26%, 1.3%);
+        @include flex(row, space-between);
 
-                .header__logo {
-                    background-color: $colorFirst;
-                    border-radius: 100%;
-                    width: 35px;
-                    height: 35px;
-                    @include flex(row, stretch, start, center);
-                    // display: flex;
-                    // align-self: center;
+        .header__item {
+            @include flex(row, flex-start);
 
-                    .logo {
-                        @include getmargin(31%, 27%, 31%, 27%);
-                        // margin: 31% 27%;
-                    }
+            .header__logo {
+                background-color: $colorFirst;
+                border-radius: 100%;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-self: center;
+
+                .logo {
+                    @include getmargin(31%, 27%, 31%, 27%);
                 }
-
-                .header__title {
-                    font-size: 2rem;
-                    @include flex(row, stretch, start, center);
-                    // display: flex;
-                    // align-self: center;
-                }
-
             }
 
-            .header__item--nav {
+            .header__title {
+                font-size: 2rem;
+                display: flex;
+                align-self: center;
+            }
 
-                .header__nav {
-                    font-size: 0;
-                    @include flex(row, stretch, start, auto);
-                    // display: flex;
-                    // flex-direction: row;
-                    .nav__item,
-                    .nav__item--active {
+        }
+
+        .header__item--nav {
+
+            .header__nav {
+                font-size: 0;
+                @include flex(row, flex-start);
+
+                .nav__item,
+                .nav__item--active {
+                    @include getmargin(7.3%, 7.3%, 7.3%, 7.3%);
+                    
+                    .nav__link {
                         font-size: 1rem;
                         color: $colorSecond;
-                        @include getmargin(7.3%, 7.3%, 7.3%, 7.3%);
-                        // margin: 7.3%;
+                        text-decoration: none;
                     }
+                }
 
-                    .nav__item--active {
-                        border-bottom: 2px solid $colorFirst;
-                    }
+                .nav__item--active {
+                    border-bottom: 2px solid $colorFirst;
+                }
+
+                .nav__item:hover {
+                    border-bottom: 2px solid $colorFirst;
+                    cursor: pointer;
+                }
+
+                .nav__item:hover .nav__item--active {
+                    cursor: pointer;
                 }
             }
         }
