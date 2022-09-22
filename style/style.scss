@@ -13,7 +13,7 @@ body {
     .header {
         .conteiner {
             width: 81.26%;
-            margin: 21px auto;
+            margin: 1.3% auto;
             display: flex;
             justify-content: space-between;
 
@@ -30,8 +30,7 @@ body {
                     align-self: center;
 
                     .logo {
-                        width: 21px;
-                        margin: 7px 6px 10px;
+                        margin: 31% 27%;
                     }
                 }
 
@@ -46,12 +45,13 @@ body {
             .header__item--nav {
                 .header__nav {
                     font-size: 0;
+                    display: flex;
+                    flex-direction: row;
                     .nav__item,
                     .nav__item--active {
                         font-size: 1rem;
-                        display: inline-block;
                         color: #6C6C6C;
-                        margin: 15px;
+                        margin: 7.3%;
                     }
 
                     .nav__item--active {
@@ -72,7 +72,7 @@ body {
 
             .conteiner {
                 width: 81.26%;
-                margin: 38px auto;
+                margin: 2.9% auto;
                 display: flex;
                 flex-direction: row;
 
@@ -103,7 +103,7 @@ body {
                         background-color: #5094F2;
                         display: flex;
                         flex-direction: row;
-                        padding: 7px 4%;
+                        padding: 3% 4%;
                         width: 66%;
 
                         .buttom__picture {
@@ -127,7 +127,7 @@ body {
 
             .conteiner {
                 width: 81.26%;
-                margin: 65px auto;
+                margin: 3.5% auto;
                 display: flex;
                 flex-direction: column;
                 
@@ -169,12 +169,70 @@ body {
                         
                         .special__text {
                             font-size: .75rem;
-                            color: #6C6C6C;
+                            color: #909090;
                             text-align: center;
                         }
                     }
                 }
             }
+        }
+
+        .pramery {
+
+            .container__pramery {
+                width: 90%;
+                margin: 2.5% 3% 2.5% 7.5%;
+                display: flex;
+                flex-direction: row;
+
+                .pramery__baner{
+                    width: 100%;
+
+                    .baner__title--pramery {
+                        font-size: 1.9rem;
+                        letter-spacing: 0.02rem;
+                        line-height: 32px;
+                        color: #6F7173;
+                        margin: 0 0 10% 5%;
+                    }
+
+                    .baner__picture--pramery {
+                        width: 120%;
+                    }
+                }
+
+                .pramery__copy {
+                    padding: 4% 0 0 15%;
+
+                    .pramery__title {
+                        font-size: 1.4rem;
+                        letter-spacing: 0.01rem;
+                        line-height: 19px;
+                        color: #6F7173;
+                        margin-bottom: 3%;
+                    }
+
+                    .pramery__text {
+                        font-size: 1.05rem;
+                        letter-spacing: 0.1rem;
+                        line-height: 32px;
+                        color: #909090;
+                        width: 70%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .footer {
+        border-top: 1px solid #E5E5E5;
+        
+        .footer__title {
+            margin: 2% auto;
+            color: #909090;
+            font-size: .8125rem;
+            width: 20%;
         }
     }
 }
