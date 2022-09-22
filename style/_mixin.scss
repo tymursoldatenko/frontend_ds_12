@@ -1,0 +1,23 @@
+
+@mixin getmargin ($top, $right, $bottom, $left) {
+    margin: $top, $right, $bottom, $left;
+}
+
+@mixin flex ($fd, $jc, $ai, $as) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    align-self: $as;
+}
+
+@mixin addmarginconteiner ($wd, $mg) {
+    width: $wd;
+    margin: $mg auto;
+}
+
+@mixin addstyletext ($ft, $ls, $lh) {
+    font-size: $ft;
+    letter-spacing: $ls;
+    line-height: $lh;
+}
