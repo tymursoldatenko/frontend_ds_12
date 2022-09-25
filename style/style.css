@@ -1,174 +1,218 @@
 .header .conteiner {
   width: 81.26%;
-  margin: 1.3% auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
-  .header .conteiner .header__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
-    .header .conteiner .header__item .header__logo {
-      background-color: #5094F2;
-      border-radius: 100%;
-      width: 35px;
-      height: 35px;
-      display: flex;
-      align-self: center; }
-      .header .conteiner .header__item .header__logo .logo {
-        margin: 31% 27% 31% 27%; }
-    .header .conteiner .header__item .header__title {
-      font-size: 2rem;
-      display: flex;
-      align-self: center; }
-  .header .conteiner .header__item--nav .header__nav {
-    font-size: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
-    .header .conteiner .header__item--nav .header__nav .nav__item,
-    .header .conteiner .header__item--nav .header__nav .nav__item--active {
-      margin: 7.3% 7.3% 7.3% 7.3%; }
-      .header .conteiner .header__item--nav .header__nav .nav__item .nav__link,
-      .header .conteiner .header__item--nav .header__nav .nav__item--active .nav__link {
-        font-size: 1rem;
-        color: #6C6C6C;
-        text-decoration: none; }
-    .header .conteiner .header__item--nav .header__nav .nav__item--active {
-      border-bottom: 2px solid #5094F2; }
-    .header .conteiner .header__item--nav .header__nav .nav__item:hover {
-      border-bottom: 2px solid #5094F2;
-      cursor: pointer; }
-    .header .conteiner .header__item--nav .header__nav .nav__item:hover .nav__item--active {
-      cursor: pointer; }
+  justify-content: space-between;
+}
+.header .conteiner .header__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header .conteiner .header__item .header__logo {
+  background-color: #5094F2;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-self: center;
+}
+.header .conteiner .header__item .header__logo .logo {
+  margin: 31% 27% 31% 27%;
+}
+.header .conteiner .header__item .header__title {
+  font-size: 2rem;
+  display: flex;
+  align-self: center;
+}
+.header .conteiner .header__item--nav {
+  width: 30%;
+}
+.header .conteiner .header__item--nav .header__nav {
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header .conteiner .header__item--nav .header__nav .nav__item,
+.header .conteiner .header__item--nav .header__nav .nav__item--active {
+  padding: 7.3%;
+}
+.header .conteiner .header__item--nav .header__nav .nav__item .nav__link,
+.header .conteiner .header__item--nav .header__nav .nav__item--active .nav__link {
+  font-size: 1rem;
+  color: #6C6C6C;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header .conteiner .header__item--nav .header__nav .nav__item--active {
+  border-bottom: 3px solid #5094F2;
+}
+.header .conteiner .header__item--nav .header__nav .nav__item:hover {
+  border-bottom: 3px solid #5094F2;
+}
+.header .conteiner .header__item--nav .header__nav .nav__item:hover .nav__item--active {
+  border-bottom: none;
+}
 
 .footer {
-  border-top: 1px solid #E5E5E5; }
-  .footer .footer__title {
-    width: 20%;
-    margin: 2% auto;
-    color: #909090;
-    font-size: .8125rem; }
+  border-top: 1px solid #E5E5E5;
+}
+.footer .footer__title {
+  width: 20%;
+  margin: 2% auto;
+  color: #909090;
+  font-size: 0.8125rem;
+}
 
 @font-face {
   font-family: "Myriad Pro";
   font-weight: 400;
   font-style: normal;
-  src: url(../MyriadPro-Regular.woff2), local(MyriadPro); }
+  src: url(../MyriadPro-Regular.woff2), local(MyriadPro);
+}
 body {
-  font-family: "Myriad Pro"; }
-  body .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
-    body .main .additional {
-      background-image: url(../img/background.png);
-      background-size: cover; }
-      body .main .additional .conteiner {
-        width: 81.26%;
-        margin: 2.9% auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start; }
-        body .main .additional .conteiner .additional__baner .additional__picture {
-          width: 70%; }
-        body .main .additional .conteiner .additional__item {
-          color: white;
-          margin: 8% 0 0 25%; }
-          body .main .additional .conteiner .additional__item .additional__title {
-            font-size: 1.5rem;
-            letter-spacing: 0.02rem;
-            line-height: 32px; }
-          body .main .additional .conteiner .additional__item .additional__text {
-            font-size: 1rem;
-            letter-spacing: 0.02rem;
-            line-height: 26px;
-            margin: 0 0 12% 0; }
-          body .main .additional .conteiner .additional__item .additional__buttom {
-            background-color: #5094F2;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            padding: 3% 4%;
-            width: 70%; }
-            body .main .additional .conteiner .additional__item .additional__buttom .buttom__picture {
-              display: flex;
-              align-items: center; }
-            body .main .additional .conteiner .additional__item .additional__buttom .buttom__link {
-              color: white;
-              text-decoration: none;
-              font-size: 1.25rem;
-              display: flex;
-              align-items: center; }
-            body .main .additional .conteiner .additional__item .additional__buttom .buttom__link:hover {
-              font-size: 1.3rem;
-              text-shadow: 2px 2px 4px #000000;
-              transition: all .2s linear; }
-    body .main .special .conteiner {
-      width: 81.26%;
-      margin: 3.5% auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; }
-      body .main .special .conteiner .special__item {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        body .main .special .conteiner .special__item .special__block {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          width: 20%; }
-          body .main .special .conteiner .special__item .special__block .special__baner {
-            background-color: #5094F2;
-            border-radius: 100%;
-            width: 90%;
-            height: 200px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin: 0 0 8% 0; }
-          body .main .special .conteiner .special__item .special__block .baner__first {
-            background-color: #D94748; }
-          body .main .special .conteiner .special__item .special__block .baner__second {
-            background-color: #EBBB11; }
-          body .main .special .conteiner .special__item .special__block .special__title {
-            font-size: 1rem;
-            color: #5094F2; }
-          body .main .special .conteiner .special__item .special__block .special__text {
-            font-size: .75rem;
-            color: #909090;
-            text-align: center; }
-    body .main .pramery .container__pramery {
-      width: 90%;
-      margin: 2.5% 3% 2.5% 7.5%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-      body .main .pramery .container__pramery .pramery__baner {
-        width: 100%; }
-        body .main .pramery .container__pramery .pramery__baner .baner__title--pramery {
-          font-size: 1.9rem;
-          letter-spacing: 0.02rem;
-          line-height: 32px;
-          color: #6F7173;
-          margin: 0 0 10% 5%; }
-        body .main .pramery .container__pramery .pramery__baner .baner__picture--pramery {
-          width: 120%; }
-      body .main .pramery .container__pramery .pramery__copy {
-        padding: 4% 0 0 15%; }
-        body .main .pramery .container__pramery .pramery__copy .pramery__title {
-          font-size: 1.4rem;
-          letter-spacing: 0.01rem;
-          line-height: 19px;
-          color: #6F7173;
-          margin: 0 0 3% 0; }
-        body .main .pramery .container__pramery .pramery__copy .pramery__text {
-          font-size: 1.05rem;
-          letter-spacing: 0.1rem;
-          line-height: 32px;
-          color: #909090;
-          width: 70%; }
+  font-family: "Myriad Pro";
+}
+body .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body .main .additional {
+  background-image: url(../img/background.png);
+  background-size: cover;
+}
+body .main .additional .conteiner {
+  width: 81.26%;
+  margin: 2.9% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body .main .additional .conteiner .additional__baner .additional__picture {
+  width: 70%;
+}
+body .main .additional .conteiner .additional__item {
+  color: white;
+  margin: 8% 0 0 25%;
+}
+body .main .additional .conteiner .additional__item .additional__title {
+  font-size: 1.5rem;
+  letter-spacing: 0.02rem;
+  line-height: 32px;
+}
+body .main .additional .conteiner .additional__item .additional__text {
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  line-height: 26px;
+  margin: 0 0 12% 0;
+}
+body .main .additional .conteiner .additional__item .additional__buttom {
+  background-color: #5094F2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 3% 4%;
+  width: 70%;
+}
+body .main .additional .conteiner .additional__item .additional__buttom .buttom__picture {
+  display: flex;
+  align-items: center;
+}
+body .main .additional .conteiner .additional__item .additional__buttom .buttom__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+body .main .additional .conteiner .additional__item .additional__buttom .buttom__link:hover {
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px #000000;
+  transition: all 0.2s linear;
+}
+body .main .special .conteiner {
+  width: 81.26%;
+  margin: 3.5% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body .main .special .conteiner .special__item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .main .special .conteiner .special__item .special__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+}
+body .main .special .conteiner .special__item .special__block .special__baner {
+  background-color: #5094F2;
+  border-radius: 100%;
+  width: 90%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 8% 0;
+}
+body .main .special .conteiner .special__item .special__block .baner__first {
+  background-color: #D94748;
+}
+body .main .special .conteiner .special__item .special__block .baner__second {
+  background-color: #EBBB11;
+}
+body .main .special .conteiner .special__item .special__block .special__title {
+  font-size: 1rem;
+  color: #5094F2;
+}
+body .main .special .conteiner .special__item .special__block .special__text {
+  font-size: 0.75rem;
+  color: #909090;
+  text-align: center;
+}
+body .main .pramery .container__pramery {
+  width: 90%;
+  margin: 2.5% 3% 2.5% 7.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body .main .pramery .container__pramery .pramery__baner {
+  width: 100%;
+}
+body .main .pramery .container__pramery .pramery__baner .baner__title--pramery {
+  font-size: 1.9rem;
+  letter-spacing: 0.02rem;
+  line-height: 32px;
+  color: #6F7173;
+  margin: 0 0 10% 5%;
+}
+body .main .pramery .container__pramery .pramery__baner .baner__picture--pramery {
+  width: 120%;
+}
+body .main .pramery .container__pramery .pramery__copy {
+  padding: 4% 0 0 15%;
+}
+body .main .pramery .container__pramery .pramery__copy .pramery__title {
+  font-size: 1.4rem;
+  letter-spacing: 0.01rem;
+  line-height: 19px;
+  color: #6F7173;
+  margin: 0 0 3% 0;
+}
+body .main .pramery .container__pramery .pramery__copy .pramery__text {
+  font-size: 1.05rem;
+  letter-spacing: 0.1rem;
+  line-height: 32px;
+  color: #909090;
+  width: 70%;
+}/*# sourceMappingURL=style.css.map */
